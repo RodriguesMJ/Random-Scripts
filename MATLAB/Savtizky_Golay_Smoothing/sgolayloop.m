@@ -1,6 +1,10 @@
 %Script to smooth all absorbance values in the 3D array Glycerol_R2 using
 %a Savitzky-Golay Filter
 
+%Find and replace all "K98A_2nd_Crystal_R1" to the name of the 3D array
+%containing the spectra that you wich to smooth. This script is usually
+%run after ImportSpectra.m
+
 %'a' is a variable that will increase until it is equal to the number of 
 %pages in the Glycerol_R2 3D array
 a=1;

@@ -58,7 +58,7 @@ while [ $c -le $b ]
 	###List the file names of all images in dataset in ori2.dat text file
 	ls $e*cbf > ori2.dat
 	
-	#Count how many lines are in ori2.dat and therfore how many images there are
+	#Count how many lines are in ori2.dat and therefore how many images there are
 	
 	f=`wc ori2.dat | awk '{print $1}'`
 	echo There are $f images in dataset $c >> xds_I320.log	

@@ -1,5 +1,7 @@
 #Script to run XDS on all of the Pdx1 I320 datasets
 
+#Make executable with the command: chmod 755 xds_I320.sh
+
 #Search for all files ending with 0001.cbf in the 151213 folder and the paths
 #to the ori1.dat text file. Search through ori1 for test images and remove them
 #from the list of files

@@ -13,9 +13,9 @@ b=44
 ###################################### WRITE KEYWORD FILES #########################################
 #Edit resolution as necessary
 echo RADFRAC 0 > analysis_keywords.dat
-echo RESO HIGH 1.1 >> analysis_keywords.dat
+echo RESO HIGH 1.30 >> analysis_keywords.dat
 
-echo RESO HIGH 1.1 > synthesis_keywords.dat
+echo RESO HIGH 1.30 > synthesis_keywords.dat
 #####################################################################################################
 
 

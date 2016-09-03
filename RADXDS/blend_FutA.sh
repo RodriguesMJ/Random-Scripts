@@ -35,7 +35,7 @@ do
 	
 	echo BLEND analysis mode initiated for sweep $a
 
-	blend -a ori1.dat < analysis_keywords.dat > blend_analysis.log
+	blend -a ori1.dat < ../analysis_keywords.dat > blend_analysis.log
 		
 	echo BLEND analysis mode complete for sweep $a
 

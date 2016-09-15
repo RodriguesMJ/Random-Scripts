@@ -7,8 +7,8 @@ cd xds
 #Find all images, cut out duplicates
 find /dls/mx-scratch/matt/FutA/ESRF_2016/FutAPm/ -name "*cbf" > ori1.dat
 sed -i.bak '/._F/d' ./ori1.dat
-IMG_NO=`wc ori1.dat | awk '{print $1}'`
-echo There are $IMG_NO images.
+#IMG_NO=`wc ori1.dat | awk '{print $1}'`
+#echo There are $IMG_NO images.
 
 cat ori1.dat | sort | rev | cut -c 9- | rev | uniq > ori2.dat
 sed -i.bak '/test/d' ./ori2.dat #remove test images
@@ -84,18 +84,25 @@ DISTANCE=`head -45 $o"0001.cbf" | grep "Detector_distance" | cut -c 21- | rev | 
 #SENSOR_THICKNESS=`head -45 $o"0001.cbf" | grep "thickness" | cut -c 29- | rev | cut -c 4- | rev`
 DETECTOR=`head -45 $o"0001.cbf" | grep "Detector:" | cut -c 13- | rev | cut -c 26- | rev`
 DA=$(echo "$DISTANCE * 1000" | bc -l)
+ORGX=`head -45 $o"0001.cbf" | grep "Beam_xy" | cut -c 12- | rev | cut -c 18- | rev`
+ORGY=`head -45 $o"0001.cbf" | grep "Beam_xy" | cut -c 20- | rev | cut -c 10- | rev`
+
 echo The detector is $DETECTOR
 
 if [[ $DETECTOR == *"2M"* ]]
 then
   echo "It's a 2M!";
   SENSOR_THICKNESS=0.32
+  NX=1475
+  NY=1679
   #sleep 5
 fi
 if [[ $DETECTOR == *"6M"* ]]
 then
   echo "It's a 6M!";
   SENSOR_THICKNESS=0.45
+  NX=2463
+  NY=2527
   #sleep 5 
 fi
 
@@ -127,8 +134,8 @@ echo   NAME_TEMPLATE_OF_DATA_FRAMES= $o"????.cbf !CBF"  >> ./folder_$ba/wedge_$f
 echo   DETECTOR_DISTANCE= $DA  >> ./folder_$ba/wedge_$fa/sweep_$l/XDS.INP 
 echo   DETECTOR= PILATUS MINIMUM_VALID_PIXEL_VALUE= 0.0 OVERLOAD= 1048500  >> ./folder_$ba/wedge_$fa/sweep_$l/XDS.INP 
 echo   SENSOR_THICKNESS= $SENSOR_THICKNESS  >> ./folder_$ba/wedge_$fa/sweep_$l/XDS.INP 
-echo   ORGX= 1219.05 ORGY= 1263.22  >> ./folder_$ba/wedge_$fa/sweep_$l/XDS.INP 
-echo   NX= 2463 NY= 2527  >> ./folder_$ba/wedge_$fa/sweep_$l/XDS.INP 
+echo   ORGX= $ORGX ORGY= $ORGY  >> ./folder_$ba/wedge_$fa/sweep_$l/XDS.INP 
+echo   NX= $NX NY= $NY  >> ./folder_$ba/wedge_$fa/sweep_$l/XDS.INP 
 echo   QX= 0.1720  QY= 0.1720  >> ./folder_$ba/wedge_$fa/sweep_$l/XDS.INP 
 echo   VALUE_RANGE_FOR_TRUSTED_DETECTOR_PIXELS= 7000 30000  >> ./folder_$ba/wedge_$fa/sweep_$l/XDS.INP 
 echo   DIRECTION_OF_DETECTOR_X-AXIS= 1.0 0.0 0.0  >> ./folder_$ba/wedge_$fa/sweep_$l/XDS.INP 
@@ -267,4 +274,3 @@ echo   MAXIMUM_NUMBER_OF_PROCESSORS= 16  >> ./folder_$ba/wedge_$fa/sweep_$l/XDS.
 (( b ++ ))
 
 	done
-

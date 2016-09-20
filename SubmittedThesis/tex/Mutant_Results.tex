@@ -1,0 +1,424 @@
+\chapter{An Analysis of the Structure and Activity of \atpdx~ Mutants}\label{ch:Mutant_Results}
+
+One of the aims of the work described in this thesis has been to characterise the structure of \atpdx ~at different intermediate states in the catalytic cycle of the enzyme. The protein must accumulate in a single intermediate state in the crystal for it to be possible to determine the crystal structure. The structures described in Chapter \ref{ch:WT_Results} accumulated in a single intermediate state by depriving the protein of specific substrates, ensuring that the enzyme became trapped at a particular step in the reaction. 
+
+In order to elucidate the structure of additional intermediate states, it was decided to select a few \atpdx ~residues that have been assigned as having a catalytic function, and exchange them with similar residues to trap the enzyme at steps in the reaction that the respective amino acids are required for. The effect of the point mutations on the enzyme kinetics of Pdx1 was considered to be outside the scope of this project and has been performed by Smith \textit{et al} in their investigation into \textit{Geobacillus stearothermophilus} Pdx1 \cite{Smith2015}.  
+ 
+Although several point mutations were introduced into \atpdx , only a few were characterised using biochemical assays and crystallography. The positions of the \atpdx ~variants characterised in this chapter are shown in Figure \ref{fig:Mutant_Positions}. The structures of wild type \atpdx ~identified that Lysine 98, Aspartate 41 and Serine 121 in the P1 site interact with R5P, I320 and I320/G3P (Figures \ref{fig:Pdx1_R5P}, \ref{fig:Pdx1_I320} \& \ref{fig:Pdx1_G3P}); exchange of these residues might enable trapping of additional intermediate states in the steps preceding the addition of G3P to I320. 
+
+Histidine 132 in the P2 site of \atpdx ~was identified as forming a hydrogen bond to oxygen that links the pyridine ring of PLP to the phosphate group via an ester bond (Figure \ref{fig:PLP_P2}). A reduction in the rate of PLP formation by the \atpdx ~H132N may indicate that synthesis of PLP is completed in the P2 site.      
+
+The structures presented in Chapter \ref{ch:WT_Results} suggest that Lysine 166 is essential for the formation of the I320 intermediate (Figure \ref{fig:Pdx1_I320}). However, data in the literature suggest that the exchange of Lysine 166 for arginine does not completely stop I320 formation, but only reduces the rate of formation \cite{Raschle2007}. It was therefore decided to structurally characterise the \atpdx ~K166R protein after incubation with R5P and ammonia.   
+%Mutations were made to a selection of the residues in the P1 and P2 active sites of \atpdx~ that have been identified as possibly participating in catalysis on the basis of the wild type structures and with the aim of better understanding their contribution to catalysis of PLP biosynthesis (Figure \ref{fig:Mutant_Positions}).
+
+
+\begin{figure}[!htbp]
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+		
+	\includegraphics[width=10cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/mutants/mutant_positions_label}}	
+
+	\captionof{figure}[Positions of the exchanged Pdx1 residues]{Positions of Pdx1 residues exchanged using site-directed mutagenesis.\label{fig:Mutant_Positions}}	
+\end{minipage}
+\end{figure}
+
+The \atpdx~ mutants were expressed and purified using the same methods as for the wild type protein. I320 and PLP enzyme assays were performed. Mutants that were incapable of catalysing PLP biosynthesis were crystallised and soaked with substrates, to determine the step in the reaction that catalysis is aborted and determine whether the enzyme had become trapped in a previously unseen intermediate state not accessible with the wild type protein.
+\FloatBarrier
+\clearpage
+
+\section{\atpdx ~D41N}
+Aspartate 41 (residue 24 in \textit{B. subtilis} Pdx1), was identified as an essential amino acid for catalysis of I320 formation, and therefore PLP biosynthesis, in the first investigation into the nature of the I320 intermediate \cite{Raschle2007}. However, the exact role of Aspartate 41 in the mechanism of I320 formation is unknown. It was decided to attempt to reconstitute I320 formation \textit{in crystallo} with the \atpdx ~D41N mutant, and to determine the structure of the protein at the step in the reaction where catalysis was aborted. This would inform us as to whether Aspartate 41 is required for the binding of R5P or for the incorporation of ammonia, which must both occur before I320 forms.  
+\subsection*{Spectra of \atpdx ~D41N}
+The catalytic competency of \atpdx ~D41N was determined by collecting UV-Vis spectra of the protein after incubation with R5P and ammonia. Figure \ref{fig:Pdx1WT_D41Noverlay} clearly shows that there is no change in the absorbance spectrum of \atpdx ~D41N after incubation with R5P and ammonium sulphate. This was observed when the experiment was repeated and is consistent with the 2\% activity observed by Smith \textit{et al} with the \textit{Geobacillus stearothermophilus} Pdx1 protein mutated from aspartate to asparagine in the equivalent position \cite{Smith2015}.  
+
+The absorbance at 315 nm reduced slightly over the first 50 seconds of the I320 assays resulting in a calculated specific activity of -0.03 \act with a standard deviation of 0.03 \act. Relative to the wild type protein, this represents an activity of -0.24\% with a standard deviation of 0.23\%. The slightly negative observed activity may be caused by drift of the spectrophotometer rather than representing a real decrease in absorbance at 315 nm. The activity of each of the \atpdx ~mutants for I320 formation is listed in Table \ref{tab:I320activity}. The PLP assay was not performed as there was no I320 present after one hour (Figure \ref{fig:Pdx1WT_D41Noverlay}). 
+\FloatBarrier    
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+		
+	\includegraphics[width=8cm, height=8cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/spectra/overlay/MBD41Nnative_320overlay.pdf}}	\label{fig:Pdx1WT_D41Noverlay}
+
+	\captionof{figure}[Spectra of \atpdx ~D41N in solution]{Spectra of \atpdx ~D41N before (blue) and after a one hour incubation with R5P and ammonium sulphate. Baseline correction for Rayleigh scattering was performed as described previously (Section \ref{sec:bg}).}	
+\end{minipage} 
+
+This experiment confirmed that residue Aspartate 41 is critical for the formation of the \atpdx I320 intermediate. However, the enzyme assay does not elucidate whether the residue is required for binding of R5P, which has no spectroscopic signature, or for incorporation of ammonia which must both occur for the formation of I320.    
+
+\subsection*{Structures of \atpdx ~D41N}
+The structure of \atpdx ~D41N in the native and R5P bound states was investigated using X-ray crystallography following the observation that the mutant was incapable of forming the I320 intermediate in solution. Attempts to form the I320 intermediate with \atpdx ~D41N \textit{in crystallo} were also unsuccessful.
+
+Figure \ref{fig:D41NR5P} shows that, similarly to the wild type protein, \atpdx ~D41N is capable of binding to R5P covalently. Aspartate 41 is therefore not essential for the binding of R5P. This result contradicts a mass spectrometry experiment by Smith \textit{et al} where it was shown that incubation of \textit{Gs}Pdx1 with R5P for 15 minutes did not result in a covalent complex between Pdx1 and R5P \cite{Smith2015}. An experiment that may be performed to confirm that \atpdx ~D41N binds R5P covalently would be to collect mass spectra of \atpdx ~D41N with and without incubating the protein with R5P, to determine whether there is an increase in mass corresponding to binding of R5P.  
+
+\begin{figure}[!hbtp]
+\centering
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, height=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/ma237-2/ma237-21190516label.png}	
+  \caption{}
+  \label{fig:D41Nnative} 
+\end{subfigure}
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, height=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/ma240-1/ma240-1D41N_R5Pchainbnewlabel.png}
+  \caption{}
+ \label{fig:D41NR5P} 
+\end{subfigure}
+\caption[Crystal structures of \atpdx~D41N in the native and R5P bound states]{(a) Crystal structure of \atpdx~ D41N solved at 2.24 \si{\angstrom} resolution in the native state. (b) Crystal structure of \atpdx~D41N solved at 2.18 \si{\angstrom} resolution with R5P bound. The sidechains of Asparagine 41, Lysine 98 and Lysine 166 are shown in stick format (carbon atoms forest, nitrogen atoms cyan, oxygen atoms red) in both structures. R5P binds covalently to Lysine 98 in the P1 site (carbon orange, oxygen red, phosphorous purple). 2Fo-Fc electron density is shown around Lysine 98 and the covalent intermediate, contoured at 1$\sigma$.}
+\end{figure} 
+
+R5P binds in a similar conformation in both the D41N and the wild type structures (Figure \ref{fig:R5P_binding}). As the wild type \atpdx -R5P complex can be converted to the I320 intermediate by the addition of ammonia, it is likely that the substrate is oriented correctly relative to the ammonia tunnel for the reaction with ammonia to occur in both the wild type and D41N structures. 
+
+It is unclear what role Aspartate 41 plays in ammonia incorporation; it may participate in acid-base catalysis that assists the leaving of the R5P C2 ketone group. However, the sidechain of Aspartate 41 is only within hydrogen bonding distance of the C3 hydroxyl group in both the wild type and mutant structures, so the mechanism by which it might participate in acid-base catalysis is unclear (Figure \ref{fig:Pdx1_R5P} \& \ref{fig:D41NR5P}). 
+
+%However, several investigations have identified that the residue is essential for the biosynthesis of PLP, and the crystal structures presented here show that the residue is not essential for binding of R5P \cite{Raschle2007,Smith2015}. 
+
+\begin{figure}[!hbtp]
+\centering
+
+  \centering
+  \includegraphics[width=8cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/ma240-1/update/ma240-1WT_D41chainb.png}
+\caption[Comparison of R5P binding to wild type \atpdx and D41N]{Overlay of R5P bound in the \atpdx ~D41N R5P structure (bold, red outline) and the wild type \atpdx ~structure (faded, black outline) Atoms coloured as described in Figure \ref{fig:D41NR5P}\label{fig:R5P_binding}}
+\end{figure} 
+
+
+%As observed with Aspartate 41 in the wild type protein, asparagine 41 hydrogen bonds to the C3 oxygen of R5P at a distance of 2.6 \si{\angstrom} (Figure \ref{fig:D41NR5P}). It is clear from the enzyme activity assays that the residue is important for a catalysis of I320 formation. The observation that there was no accumulation any chromophoric intermediate after addition of ammonia suggests that the D41N mutant is incapable of forming the pre-I320 complex observed with K166R. It is likely that that Aspartate 41 is required for catalysis of the substitution of the ketone oxygen at C2 in \textcolor{red}{4} to \textcolor{red}{5} (Figure \ref{fig:R5PtoI320}).
+     
+\newpage
+\subsubsection{\atpdx D41N crystallographic statistics}
+\begin{table}[ht]
+  \centering
+\begin{tabular}{ |P{4cm}||P{4.25cm}|P{4.25cm}|}
+ \hline
+ \multicolumn{3}{|c|}{Crystallographic Statistics for \atpdx ~D41N Structures} \\
+ \hline
+ \multicolumn{1}{|l|}{Protein Name (Dataset)} &\textit{At}Pdx1.3 D41N Native (ma237-2)&\textit{At}Pdx1.3 D41N R5P (ma240-1)\\
+ \hline
+ Data Collection   &I02~(DLS) ~~~~~~~~~ 13/07/2015&I02~(DLS) ~~~~~~~~ 13/07/2015\\
+ Space group &R3&R3\\
+ Unit cell &178.5,178.5,115.5&178.3,178.3,116.0\\
+ Resolution    &89.26-2.24 (2.30-2.24)&46.37-2.18 (2.23-2.18)\\
+ R\textsubscript{merge}&10.2 (72.3)&5.4 (28.4)\\
+ CC\sfrac{1}{2}&0.995 (0.454)&0.997 (0.876)\\
+ \sfrac{I}{$\sigma$(I)}&6.1 (1.2)&8.8 (2.2)\\
+ Completeness (\%)   &95.0 (96.7)&99.4 (98.5)\\
+ Multiplicity    &3.6 (3.3)&2.6 (2.4)\\
+ Unique Reflections    &62682&71333\\
+ Wilson B-factor    &35.6&28.6\\
+ R\textsubscript{work}/R\textsubscript{free}&21.88/25.33&17.32/20.25\\ 
+ \hline
+ \textbf{Number of atoms} & &\\
+ Protein    &7903&8128\\
+ Ligand    &0&108\\
+ Water    &293&483\\
+ \hline
+ \textbf{Ramachandran} & & \\
+ Preferred &1041 (98.2\%) &1058 (98.7\%)\\ 
+ Allowed &18 (1.7\%) &14 (1.3\%)\\ 
+ Outliers &1 (0.1\%) &0 (0.0\%)\\ 
+ \hline 
+ \textbf{B-factors} & &\\
+ Protein &49.1&39.4\\
+ Ligand &-&50.7\\
+ Water &40.2&39.7\\
+ \hline
+ \textbf{RMS Deviations} & &\\
+ Bond Lengths (\si{\angstrom}) &0.013&0.016\\
+ Bond Angles (\si{\degree}) &1.690&1.824\\
+ \hline
+\end{tabular}
+  \caption[Crystallographic statistics for \atpdx ~D41N structures]{Table of crystallographic statistics for \atpdx ~D41N structures.}
+\end{table}
+\clearpage
+\glsadd{RMSD}
+
+\section{\atpdx ~K98A}
+The K98A mutant has been well characterised in \textit{B. subtilis}, where it has been observed that the mutant is incapable of binding R5P covalently. The aim of the experiments performed in this section was to attempt to solve the crystal structure of \atpdx ~K98A in a state where R5P was bound non-covalently in the P1 site. Determining whether R5P remained bound in the active site of \atpdx ~in the open or closed form would have been informative in understanding whether Pdx1 catalyses ring opening and if Lysine 98 is required for that catalysis.  
+
+\subsection*{Spectra of \atpdx ~K98A}\label{sec:K98A}
+
+
+\begin{minipage}{\linewidth}
+	\makebox[\linewidth]{
+		
+	\includegraphics[width=8cm, height=8cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/spectra/K98A/K98A_Nat_320.pdf}}	
+
+	\captionof{figure}[Spectra of \atpdx ~K98A in solution]{Spectra of \atpdx ~K98A before (blue) and after a one hour incubation with R5P and ammonium sulphate (yellow). Baseline correction for Rayleigh scattering was performed as described previously (Section \ref{sec:bg})\label{fig:Pdx1K98Aspec}}	
+\end{minipage} 
+
+As expected, the \atpdx ~K98A mutant showed no activity for the production of I320 (Figure \ref{fig:Pdx1K98Aspec}). Fitting a straight line to the absorbance at 315 nm over the first 50 seconds of the I320 assay gave a specific activity of 0.31 \act, with a standard deviation of 1.04 \act. The PLP assay was not performed. 
+
+Soaking of \atpdx ~crystals with R5P, using the same protocol as for the wild type protein, was unsuccessful in producing a complex with R5P bound. This suggests that residue K98 is essential for binding of R5P and that it is unlikely that R5P binds in a stable, non-covalent complex with the millimolar concentrations of R5P used in the soaking experiment.  
+\clearpage
+\section{\atpdx ~S121A}
+\FloatBarrier
+\subsection*{Spectra of \atpdx ~S121A}
+The UV-Vis spectra of \atpdx ~S121A show that the mutant is capable of forming the I320 intermediate and that after the addition of the third substrate, G3P, there is a reduction in the I320 peak; however, there is no peak at 415 nm to signal production of PLP (Figure \ref{fig:pdx1_S121A_spectra}).
+
+\begin{figure}
+\centering
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, height=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/spectra/S121A/S121A_overlay.pdf}	
+  \caption{}
+  \label{fig:pdx1_S121A_spectra}
+\end{subfigure}
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, height=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/spectra/S121A/S121A_I320_TimeScan2.pdf}
+  \caption{}
+  \label{fig:pdx1_S121A_ts_320}
+\end{subfigure}
+
+\caption[Spectra of \atpdx ~S121A in solution]{(a) Spectra of \atpdx ~S121A before addition of substrates (blue), after a one hour incubation with R5P and ammonium sulphate (yellow) and after a further one hour incubation with G3P (green). Baseline correction for Rayleigh scattering was performed as described previously (Section \ref{sec:bg}). (b) I320 activity assay for \atpdx~ S121A, the experiment was repeated three times, one representative assay is shown.\label{fig:pdx1_S121A}}
+\end{figure}      
+%Lower rate, role of S121A in stabilising I320?
+
+The specific activity of \atpdx ~S121A for I320 formation was measured in the same way as described in Section \ref{sec:WT_Assays} and is 0.88 \act~ with a standard deviation of 0.15 \si{\nano\mole\per\milli\gram\per\minute}. The rate of I320 formation by the S121A mutant is 7.97 \% that of the wild type, suggesting that although the residue is not essential for I320 formation, it is likely to be involved in catalysis. Interestingly, the absorbance at 315 nm appears to increase for the first 1500 seconds at which point the absorbance decreases, suggesting that the mutation may reduce the stability of the intermediate relative to the wild type protein where I320 is stable in the protein for several days in the absence of G3P. The wild type \atpdx ~I320 structure shows that the side chain of Serine 121 forms a hydrogen bond with the C3 oxygen of I320, this bond may be important for the stability of the intermediate (Figure \ref{fig:Pdx1_I320}). Although the 320 nm peak was lower after the PLP assay, the absorbance at 315 nm appeared to be decreasing during the I320 assay, suggesting that reduction in the I320 peak may not have been caused by the addition of G3P (Figure \ref{fig:pdx1_S121A}). 
+
+The absence of a peak at 415 nm after the PLP assay suggests that the S121A variant lacks the capability to convert I320 to PLP (Figure \ref{fig:pdx1_S121A_spectra}). Calculating the rate of PLP biosynthesis by S121A, as described previously for the wild type protein, gives a specific activity of 0.02 \act with a standard deviation 0.04 \act. This is an activity of 4.84\% relative to the wild type protein with a standard deviation of 8.82\%. As two of the three showed slightly negative changes in absorbance, it is likely that S121A is inactive for biosynthesis of PLP. 
+
+Serine 121, therefore, appears to accelerate the rate of I320 formation and is also essential for the conversion of I320 to PLP. These results suggest that I320 in the S121A mutant may degrade into an off-pathway compound that does not convert into PLP. Analysis of \atpdx ~S121A mutant at various time points after the start of the I320 assay by mass spectrometry may allow the formation of I320 to be tracked and for any products of I320 decomposition to be characterised.    
+
+\clearpage
+\section{\atpdx ~H132N}
+
+
+\subsection*{Spectra of \atpdx ~H132N}
+
+UV-Vis spectra of \atpdx ~H132N show that the mutant is both capable of forming the I320 intermediate and catalysing PLP biosynthesis (Figure \ref{fig:pdx1_H132N_spectra}). The specific activity of \atpdx ~H132N for I320 formation is 13.47 \act with a standard deviation of 1.13 \act; this is 122.1\% of the activity of the wild type, suggesting that Histidine 132 is not involved in catalysis of I320 formation. 
+
+The rate of conversion of I320 to PLP by \atpdx ~H132N was 59.2\% of that of the wild type, suggesting that Histidine 132 plays a role in the catalysis of PLP biosynthesis. The PLP assay was only performed twice for this variant due to a lack of protein. The results of the PLP assays for each of the variants are presented in Table \ref{tab:PLPactivity}. 
+
+These assay results agree well with those of Smith \textit{et al}, where the mutation of the equivalent residue to Histidine 132 in \textit{G. stearothermophilus} Pdx1 to glutamine resulted in a 27\% increase in I320 activity and a 22\% reduction in the rate of PLP biosynthesis \cite{Smith2015}. The reason for the activity of this variant to be higher for I320 formation than the wild type is not apparent; the residue is not close to R5P, I320 or the ammonia tunnel linking Pdx1 and Pdx2. It is possible a smaller fraction of the protein co-purifies with PLP bound in the P2 site than in the wild type, leaving Lysine 166 free to rotate towards the P1 site during I320 formation. This hypothesis may be tested by comparing the rates of I320 formation by the wild type and H132N variants after emptying of the active sites by incubating the proteins with ammonia and G3P and performing dialysis to remove the PLP. 
+
+Moccand \textit{et al} have also shown that mutating the equivalent residues to Histidine 132 and Arginine 155, which are both in the P2 site of Pdx1, reduced the efficiency with which \textit{B. subtilis} Pdx1 catalyses conversion of I320 to PLP \cite{Moccand2011}. The reduction in the rate of PLP biosynthesis suggests that some part of catalysis occurs in the P2 site. 
+
+   
+\begin{figure}[!htbp]
+\centering
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, height=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/spectra/H132N/WL/Scaled_Overlay_H132N.pdf}	
+  \caption{}
+  \label{fig:pdx1_H132N_spectra}
+\end{subfigure}
+%\begin{subfigure}{.49\textwidth}
+%  \centering
+%  \includegraphics[width=7cm, height=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/spectra/S121A/S121A_I320_TimeScan2.pdf}
+%  \caption{}
+%  \label{fig:pdx1_H132N_ts_PLP}
+%\end{subfigure}
+\caption[Spectra of \atpdx ~H132N in solution]{(a) Spectra of \atpdx ~H132N before addition of substrates (blue), after a one hour incubation with R5P and ammonium sulphate (yellow) and after a further one hour incubation with G3P (green). Baseline correction for Rayleigh scattering was performed as described previously (Section \ref{sec:bg}).}
+\end{figure}      
+\clearpage
+
+\section{\atpdx ~K166R}
+The role of Lysine 166 in catalysis of PLP biosynthesis has been the subject of extensive investigation since the first experiments reconstituting Pdx1 activity \textit{in vitro} \cite{Burns2005}. Lysine 166 was initially identified as covalently binding to R5P; however, it has since been shown that Lysine 98 is responsible for R5P binding \cite{Raschle2007}. Experiments reconstituting I320 formation, with Lysine 166 exchanged for an arginine residue, have determined that the mutant is capable of forming I320, although at a rate at least 12 times slower than the wild type protein \cite{Raschle2007,Smith2015}.
+
+In light of the wild type structure of \atpdx ~in the I320 state (Figure \ref{fig:Pdx1_I320}), it was unclear how the formation of this intermediate would be possible with Lysine 166 exchanged for an arginine residue. It was therefore decided to crystallise \atpdx ~K166R and soak the crystals with R5P and ammonia, to attempt to form the I320 intermediate \textit{in crystallo}.    
+
+\subsection*{Spectra of \atpdx ~K166R}
+Spectra were collected of \atpdx ~K166R in the native state and after the addition of substrates, as described for the wild type protein earlier. Background scattering appeared to have a stronger effect on the spectra of \atpdx~ K166R than the wild type protein, as is visible in Figure \ref{fig:Pdx1WT_K166Rspec}. Relative to the background absorbance in each of the K166R spectra the signal caused by absorption of light by the protein is weak (Figure \ref{fig:K166Rwlspec}).   
+
+The attempt to subtract the background scattering from the spectra, using the protocol described in Section \ref{sec:bg}, was partially successful. Figure \ref{fig:K166Rwlspec_corrected} shows that the addition of R5P and ammonia to \atpdx~ K166R causes the formation of a peak with a \lwl = 332 nm (Figure \ref{fig:K166Rwlspec_corrected}). The artefacts of the background subtraction observed in the \atpdx ~K166R spectra are similar to those observed and described for the wild type spectra (Figure \ref{fig:Pdx1WT_RayleighSub}). %However, the background subtraction also introduces a couple of artefacts. %The first is the negative absorbance values for each of the three corrected spectra between 300 nm and 500 nm. Given that it is not possible for a sample to have a negative absorbance it is clear that this is an artefact of the background subtraction. The background correction is based on two assumptions, if either of them are not true the correction will produce errors. The first assumption is that the only source of absorption between 500 nm and 700 nm is Rayleigh scattering, the second is that               
+%The effects of the baseline correction not being perfect on the spectra of \atpdx ~K166R are visible here as the negative absorption at 300 \nm ~in the native spectrum and the increase in absorbance at wavelengths greater than 400 \nm . 
+
+
+\begin{figure}
+\centering
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/spectra/K166R/K166Rwlspec}	
+	 
+    \caption{\label{fig:K166Rwlspec}}
+ 
+\end{subfigure}
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/spectra/K166R/K166Rwlspec_corrected}
+ 
+  \caption{\label{fig:K166Rwlspec_corrected}}
+ 
+\end{subfigure}
+
+\caption[Spectra of \atpdx ~K166R in solution]{(a) Raw spectra of \atpdx ~K166R before addition of substrates (blue), after one hour incubation with R5P and ammonia salts (yellow), and one hour after addition of G3P to \atpdx -I320 (green). (b) Spectra after baseline correction for Rayleigh scattering as described previously (Section \ref{sec:bg}).\label{fig:Pdx1WT_K166Rspec}}
+\end{figure}
+
+To determine whether the K166R mutation has any effect on the absorbance spectra of \atpdx ~in the I320 and PLP bound states, it is necessary to overlay the corrected K166R spectra with those of the wild type protein (Figure \ref{fig:Pdx1WT_K166Roverlay}).
+
+Comparison of wild type \atpdx ~ and \atpdx ~K166R after incubation with R5P and ammonia show that there is a shift in the \lwl of I320 from 312 \nm ~in the wild type protein to 332 \nm ~for \atpdx ~K166R. This suggests that the chromophoric species that is formed in \atpdx ~K166R has a different composition or conformation to the I320 intermediate observed in the wild type protein. It is also clear that there is no accumulation of a PLP upon addition of G3P to \atpdx ~K166R, the inability of Pdx1-K166R to form PLP has been documented previously \cite{Raschle2007}. 
+
+To determine the precise effect of the \atpdx ~K166R mutation on I320 formation it was necessary to solve the structure of \atpdx ~K166R after incubation with R5P and ammonia, as has been described in the next section.   
+\begin{figure}
+\centering
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/spectra/overlay/K166R_WT_Overlay_Scaled_320.pdf}	
+	 
+    \caption{\label{fig:Pdx1WT_K166Roverlay_I320}}
+ 
+\end{subfigure}
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/spectra/overlay/K166R_WT_Overlay_Scaled_320.pdf}
+ 
+  \caption{\label{fig:Pdx1WT_K166Roverlay_PLP}}
+ 
+\end{subfigure}
+
+\caption[Overlay of wild type and \atpdx ~K166R spectra in solution]{(a) Spectra of wild type \atpdx ~(blue) and \atpdx ~K166R (red) after a one hour incubation with R5P and ammonium sulphate. (b) Spectra of wild type \atpdx ~(blue) and \atpdx ~K166R (red) after a one hour incubation with R5P and ammonium sulphate followed by a one hour incubation with G3P. Both sets of spectra were scaled by absorbance at 280 \nm .\label{fig:Pdx1WT_K166Roverlay}}
+\end{figure}
+
+\clearpage
+\subsection*{Crystal Structures of \atpdx ~K166R}\label{sec:K166R_320}
+\FloatBarrier
+The crystal structure of \atpdx ~K166R was solved in the native state and after soaking with R5P and ammonia. We observe that in the native state there is no substrate bound to \atpdx K166R and that residue 166, which was mutated from lysine to arginine is oriented towards the P2 site (Fig \ref{fig:K166R_Native}). 
+
+\begin{figure}
+\centering
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/ma46-1/ma46-1K166Rnativelabel.pdf}	
+	 
+    \caption{\label{fig:K166R_Native} }
+ 
+\end{subfigure}
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/ma54-1/ma54-1coot10}
+ 
+  \caption{\label{fig:K166R_320}}
+ 
+\end{subfigure}
+
+\caption[Crystal structures of \atpdx ~K166R in the native and pre-I320 States]{(a) Crystal structure of \atpdx K166R in the native state solved at 2.4 \si{\angstrom}. The sidechains of Lysine 98 and Arginine 166 are shown in stick format (carbon atoms forest, nitrogen atoms cyan). A phosphate molecule is bound in the P2 site (phosphorous purple, oxygen red). (b) Crystal structure of \atpdx ~K166R in the pre-I320 state solved at 2.23 \si{\angstrom}. The covalent intermediate is shown in stick format (carbon atoms orange, nitrogen blue, oxygen red, phosphorous purple). 2Fo-Fc electron density is contoured around residue 98 and the covalent intermediate at 1$\sigma$.}
+\end{figure}
+
+\par
+%The crystal structure of \atpdx ~K166R was first solved in the native state to enable comparison with the structure of the wild type protein of the \atpdx ~K166R R5P-bound and I320 structures. The protein was crystallised in the same spacegroup as the wild type protein and the structure solved to a resolution of 2.4 \si{\angstrom}. 
+
+Soaking of \atpdx ~K166R with R5P and ammonia results in a covalent complex between the $\varepsilon$-NH$_2$ ~of Lysine 98 and carbon 1 of the ribose as shown in Figure \ref{fig:K166R_320}. UV-Vis spectra of \atpdx K166R crystals were collected to ensure that the protein had accumulated in the same intermediate state as observed when R5P and ammonia were added to the protein in solution. An absorbance peak is observed at $\sim$335 nm, which is consistent with the solution data (Figure \ref{fig:Pdx1WT_K166Roverlay}). 
+\par
+
+The phosphate group from R5P remains bound to C5 in the P1 site (Figure \ref{fig:K166R_320}), published biochemical analysis of the Pdx1 reaction mechanism has shown that elimination of the phosphate group precedes the formation of the I320 intermediate \cite{Raschle2007}. The intermediate that we observe in Figure \ref{fig:Pdx1WT_K166Roverlay} is therefore a pre-I320 intermediate state.
+
+\begin{figure}
+\centering
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, height=7cm, keepaspectratio]{/Users/matt/Dropbox/ThesisPrep/Thesis/fig/spectra/crystal/I320_overlay.pdf}	
+  \caption{}
+  \label{fig:K166R_Spec_Xtal}
+\end{subfigure}
+\begin{subfigure}{.49\textwidth}
+  \centering
+  \includegraphics[width=7cm, height=7cm, keepaspectratio]{/Users/matt/Dropbox/PLPS/figures/SupplementaryFig2/SFig2.png}
+  \caption{}
+ \label{fig:Ramachandran_beta6} 
+\end{subfigure}
+
+\caption[\textit{In crystallo} \atpdx ~K166R spectra and Ramachandran plot]{(a) Overlay of UV-Vis spectra collected from crystals of wild type \atpdx -I320 (yellow) and \atpdx ~K166R after soaking with R5P and ammonia (purple). Spectra were normalised at 280 nm. (b) Transition from the R5P bound state to the I320 intermediate is enabled by a peptide flip of the Lys166-Gly167 peptide bond. The Ramachandran plot illustrates the changes in backbone conformation between the wild type \atpdx -R5P complex (red) and the \atpdx~ K166R pre-I320 complex (green) which has a similar backbone conformation on the $\beta$6 strand to the wild type \atpdx -I320 complex (purple). Threonine 165 shown as triangles, Lysine 166 squares and Glycine 167 circles.}
+\end{figure} 
+
+ \par
+
+A comparison of the Ramachandran plots for wild type \atpdx ~in the R5P bound and I320 states with that of \atpdx~ K166R in the pre-I320 state shows that addition of ammonia to \atpdx ~K166R does trigger the peptide flip on strand $\beta$6 causing the arginine residue to orient towards the P1 site (Figure \ref{fig:Ramachandran_beta6}). However, the mutant is unable to form the bridging I320 structure observed for the wild type due to the inability of the arginine side chain to covalently react with C5 of the pentose. The phosphate group of R5P appears to act as an anchor, ensuring that R5P is correctly positioned for ammonia to react with the C2 atom and be incorporated into the I320 intermediate. The phosphate group also ensures that C5 from R5P is in the correct position to react with Lysine 166 when it orients towards P1.
+ \par 
+
+\begin{table}[ht]
+  \centering
+\begin{tabular}{|p{4cm}||P{4.25cm}|P{4.25cm}|}
+ \hline
+ \multicolumn{3}{|c|}{Crystallographic Statistics for \atpdx K166R Structures} \\
+ \hline
+\multicolumn{1}{|l|}{Protein Name (Dataset)} & \textit{At}Pdx1.3K166R (ma46-1)&\textit{At}Pdx1.3K166R-preI320 (ma54-1)\\
+ \hline
+ Data Collection   & ID23-1~(ESRF) 26/06/2013&ID23-1~(ESRF) 27/06/2013 \\ 
+ Space group&R3&R3\\
+ Unit cell &177.7,177.7,115.0 90,90,120&178.0,178.0,115.1 90,90,120\\
+ Resolution    &92.12-2.40 (2.47-2.40)& 92.23-2.23 (2.28-2.23)\\
+ R\textsubscript{merge}&0.137 (1.020) &0.094 (0.739)\\
+ CC\sfrac{1}{2}&0.962 (0.640)&0.990 (0.517)\\
+ \sfrac{I}{$\sigma$(I)}&4.2 (1.6)&7.2 (2.4)\\
+ Completeness (\%)   &92.2 (99.9)&99.7 (99.8)\\
+ Multiplicity    &2.8 (2.8)&3.9 (3.8)\\
+ Unique Reflections    &52535 (4548)&66508 (4475)\\
+ Wilson B-factor    &35.6&30.2\\
+ R\textsubscript{work}/R\textsubscript{free}&22.30/26.66&19.30/23.38\\ 
+ \hline
+ \textbf{Number of atoms} &  &\\
+ Protein    &8053&8170\\
+ Ligand    &20&68\\
+ Water    &31&333\\
+ \hline
+ \textbf{Ramachandran} &  &\\
+ Preferred &1032 (96.52\%)&1063 (98.52\%)\\ 
+ Allowed &35 (3.30\%) &16 (1.48\%)\\ 
+ Outliers &2 (0.19\%) &0 (0.00\%)\\ 
+ \hline 
+ \textbf{B-factors} & &\\
+ Protein &24.99&43.31\\
+ Ligand &34.36&65.87\\
+ Water &18.41&40.16\\
+ \hline
+ \textbf{RMS Deviations}  & &\\
+ Bond Lengths (\si{\angstrom}) &0.004&0.015\\
+ Bond Angles (\si{\degree}) &0.843&1.830\\
+ \hline
+\end{tabular}
+  \caption[Crystallographic Statistics for \atpdx~K166R Structures]{Table of crystallographic statistics for \atpdx~K166R structures in the native and pre-I320 states.}
+\end{table}
+\clearpage 
+
+\section{Summary of the Effect of Point Mutations on PLP Biosynthesis}  
+%The effects of point mutations to the residues in the Pdx1 active sites have shown varied effects, there is also published data on the effects of point mutations not invesitgated in this study that can be used to understand the role of the residues in catalysis.
+
+
+The observation that the H132N mutant has reduced activity for the conversion of I320 to PLP suggests that the P2 site is more than a product binding site and that some part of the biosynthetic reaction does occur there. It is possible that ring closure and aromatisation occur after the bond between I320/G3P and Lysine 98 is cleaved and Lysine 166 is allowed to re-orient towards the P2 site. Further characterisation of the I320/G3P intermediate is dependent on identifying a mutation, or combination of mutations, that can be made to Pdx1 to trap the enzyme in the I320/G3P state in solution. 
+
+The key finding in this chapter is the structure of the \atpdx ~K166R mutant in the pre-I320 state. This structure demonstrates that the K166R variant is not capable of synthesising the same I320 intermediate that is observed in the wild type protein and illustrates how the Pdx1 enzyme maintains control of the substrate position in the transition from the R5P state to the I320 and I320/G3P states. The pre-I320 structure shows that the phosphate of R5P acts as a rigid anchor ensuring correct positioning of R5P for ammonia incorporation and that the phosphate group is not released until Lysine 166 reacts with C5 from R5P. Once the I320 is formed, bonded to both Lysine 98 and Lysine 166, the phosphate group from R5P may be displaced by G3P.
+ 
+While Aspartate 41 plays an important role in the formation of I320, the exact function of the residue has not been elucidated by the experiments described in this chapter, beyond the observation that it is not essential for binding of R5P. Similarly, while Serine 121 is responsible for enhancing the rate of I320 and is essential for PLP formation, the exact catalytic function that the residue performs has not been clarified. A mass spectrometry analysis of the product that forms during and after the I320 assay may be informative in understanding whether the residue assists in maintaining the stability of the I320 intermediate.   
+  
+
+%The glutaminase reaction at the Pdx1/Pdx2 interface is coupled to conformational changes in the active site of Pdx1 by the passage of ammonia through the transient tunnel in Pdx1 which disrupts the $\beta$6 strand on which Lysine 166 is located. 
+
+
+
+\begin{table}[!htbp]
+  \centering
+\begin{tabular}{|P{2.2cm}|P{3cm}|P{3cm}|P{2.5cm}|P{2.5cm}|}
+%\begin{tabular}{|P|P|P|P|P|}
+\hline
+ \multicolumn{5}{|c|}{I320 Activity of \atpdx ~Mutants} \\
+\hline
+\atpdx ~Mutant&I320 Specific Activity (\act)&Standard Deviation (\act)&\% of Wild Type Activity&Standard Deviation (\% Activity)\\
+\hline
+Wild Type&11.03&0.61&100 \%&5.5 \%\\%10
+D41N&-0.03&0.03&-0.24 \%&0.23 \%\\%5
+K98A&-0.31&1.04&-2.85 \%&9.40 \%\\
+S121A&0.88&0.15&7.97 \%&1.33 \%\\
+H132N&13.47&1.13&122.09 \%&10.27 \%\\
+K166R&0.18&0.10&1.63 \%&0.94 \%\\
+\hline
+\end{tabular}
+  \caption[I320 activity of \atpdx ~mutants]{The specific activity of \atpdx ~mutants for I320 formation.\label{tab:I320activity}}
+\end{table}
+
+\begin{table}[!htbp]
+  \centering
+\begin{tabular}{|P{2.2cm}|P{3cm}|P{3cm}|P{2.5cm}|P{2.5cm}|}
+%\begin{tabular}{|P|P|P|P|P|}
+\hline
+ \multicolumn{5}{|c|}{Activity of \atpdx ~Mutants for PLP Biosynthesis} \\
+\hline
+\atpdx ~Mutant&PLP Specific Activity (\act)&Standard Deviation (\act)&\% of Wild Type Activity&Standard Deviation (\% Activity)\\
+\hline
+Wild Type&0.47&0.09&100 \%&18.27 \%\\%10
+S121A&0.02&0.04&4.84 \%&8.82 \%\\
+H132N&0.28&0.04&59.16 \%&7.52 \%\\
+\hline
+\end{tabular}
+  \caption[Activity of \atpdx ~mutants for PLP biosynthesis]{The specific activity of \atpdx ~mutants for conversion of I320 to PLP.\label{tab:PLPactivity}}
+\end{table}
+
+

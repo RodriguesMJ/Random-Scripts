@@ -15,7 +15,7 @@ a=1
 	#Cut out scale factor plot and write as ori2.dat
 	cat $AIM_IN | awk -v N=3 '{print}/Bdecay/&&--N<=0{exit}' | awk '/Bdecay/{f=1;}f' | sed '1,/Bdecay/d' | sed -n -e :a -e '1,2!{P;N;D;};N;ba' > ori2.dat
 
-	#Cut columns 2 (image number) and 6 (scale factor) from the table and shortern multiple spaces to single space
+	#Cut columns 2 (image number) and 6 (scale factor) from the table and shorten multiple spaces to single space
 	cat ori2.dat | tr -s ' ' | cut -d ' ' -f2,6 > ori3.dat
 	
 	#Calculate the average scale factor for all images in the dataset
@@ -50,9 +50,16 @@ a=1
 	#Search ori3 for images to be excluded
 	awk -v Mna="$Mna" '$2 > Mna' ori3.dat
 
-
+	awk -v Mna="$Mna" '$2 > Mna' ori3.dat > excludesweep_$aa.dat
+	
+	xclude_no=`wc excludesweep_$aa.dat | awk '{print $1}'`
+		if [ $xclude_no -ge 1 ]; then
+			echo Sweep_$aa >> excludelist.dat
+		fi
+	cat excludesweep_$aa.dat >> excludelist.dat
 	(( a ++ ))
 done
 
+
 #Clean up 
-rm ori3.dat ori2.dat
+rm ori3.dat ori2.dat  

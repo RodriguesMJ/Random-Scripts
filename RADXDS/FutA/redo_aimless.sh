@@ -147,7 +147,7 @@ EOF
 			aimless hklin $MTZ_IN hklout $AIM_OUT <<EOF > ./aimless_$aa/aimless_sweep_$aa.log
 RESO HIGH 1.3
 HKLREF $REF_MTZ
-EXCLUDE $exclude_list
+EXCLUDE BATCH $exclude_list
 EOF
 
 echo Running CTRUNCATE sweep $aa

@@ -1,7 +1,7 @@
 %MATLAB script to import all UV-Vis spectra in a directory from the Shimadzu
 %spectrophotometer into a single labelled cell array.
 
-dir_to_search = 'C:\Users\rodrigues_m\Documents\lab_work\190909_prep\spec\resaved_raw\';
+dir_to_search = '\example\directory';
 
 txtpattern = fullfile(dir_to_search, '*.txt');
 
